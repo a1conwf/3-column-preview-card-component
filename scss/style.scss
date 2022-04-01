@@ -1,0 +1,126 @@
+@import "./globals";
+
+.card__row {
+    justify-content: center;
+
+    //Each card styling
+    .card {
+        padding: 4.8rem 0 4.8rem 4.8rem;
+        max-width: calc(920px / 3);
+        border-radius: 0;
+
+        &__img {
+            width: 64px;
+            height: 40px;
+            margin-bottom: 3.5rem;
+        }
+
+        &__title {
+            margin-bottom: 2.5rem;
+        }
+
+        &__text {
+            max-width: 21.2rem;
+            margin-bottom: 8.3rem;
+            opacity: 0.75;
+        }
+
+        &__btn {
+            max-width: 14.6rem;
+            padding: 1.1rem 2.9rem 1.2rem;
+            background-color: #F2F2F2;
+            border: 2px solid #F2F2F2;
+            border-radius: 2.5rem;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    //Orange card
+    .card__orange {
+        background-color: #E28625;
+        border-radius: 0.8rem 0 0 0.8rem;
+
+        .card__btn {
+            color: #E28625;
+            transition: background-color 0.2s ease-in;
+
+            &:hover {
+                background-color: #E28625;
+                color: #fff;
+            }
+        }
+    }
+
+    //Blue card
+    .card__blue {
+        background-color: #006971;
+
+        .card__btn {
+            color: #006971;
+            transition: background-color 0.2s ease-in;
+
+            &:hover {
+                background-color: #006971;
+                color: #fff;
+            }
+        }
+    }
+
+    //Green card
+    .card__green {
+        background-color: #004140;
+        border-radius: 0 0.8rem 0.8rem 0;
+
+        .card__btn {
+            color: #004140;
+            transition: background-color 0.2s ease-in;
+
+            &:hover {
+                background-color: #004140;
+                color: #fff;
+            }
+        }
+    }
+}
+
+//Media queries
+@media screen and (max-width: 992px) {
+    .card__row {
+        .card {
+            padding: 4.8rem 0 4.8rem 3rem;
+
+            &__text {
+                max-width: 18rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        height: 100%;
+        padding: 8.8rem 0;
+    }
+
+    .card__row {
+        .card {
+            padding: 4.8rem 0 4.8rem 4.9rem;
+
+            &__text {
+                max-width: 23.1rem;
+                margin-bottom: 2.5rem;
+            }
+        }
+
+        //Orange card
+        .card__orange {
+            border-radius: 0.8rem 0.8rem 0 0;
+        }
+
+        //Green card
+        .card__green {
+            border-radius: 0 0 0.8rem 0.8rem
+        }
+    }
+}

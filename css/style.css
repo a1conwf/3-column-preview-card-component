@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  line-height: 2.5rem;
+  color: #fff;
+  background-color: #F2F2F2;
+}
+
+h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #F2F2F2;
+  text-transform: uppercase;
+}
+
+.card__row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__row .card {
+  padding: 4.8rem 0 4.8rem 4.8rem;
+  max-width: calc(920px / 3);
+  border-radius: 0;
+}
+
+.card__row .card__img {
+  width: 64px;
+  height: 40px;
+  margin-bottom: 3.5rem;
+}
+
+.card__row .card__title {
+  margin-bottom: 2.5rem;
+}
+
+.card__row .card__text {
+  max-width: 21.2rem;
+  margin-bottom: 8.3rem;
+  opacity: 0.75;
+}
+
+.card__row .card__btn {
+  max-width: 14.6rem;
+  padding: 1.1rem 2.9rem 1.2rem;
+  background-color: #F2F2F2;
+  border: 2px solid #F2F2F2;
+  border-radius: 2.5rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.card__row .card__orange {
+  background-color: #E28625;
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+
+.card__row .card__orange .card__btn {
+  color: #E28625;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+
+.card__row .card__orange .card__btn:hover {
+  background-color: #E28625;
+  color: #fff;
+}
+
+.card__row .card__blue {
+  background-color: #006971;
+}
+
+.card__row .card__blue .card__btn {
+  color: #006971;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+
+.card__row .card__blue .card__btn:hover {
+  background-color: #006971;
+  color: #fff;
+}
+
+.card__row .card__green {
+  background-color: #004140;
+  border-radius: 0 0.8rem 0.8rem 0;
+}
+
+.card__row .card__green .card__btn {
+  color: #004140;
+  -webkit-transition: background-color 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+
+.card__row .card__green .card__btn:hover {
+  background-color: #004140;
+  color: #fff;
+}
+
+@media screen and (max-width: 992px) {
+  .card__row .card {
+    padding: 4.8rem 0 4.8rem 3rem;
+  }
+  .card__row .card__text {
+    max-width: 18rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: 100%;
+    padding: 8.8rem 0;
+  }
+  .card__row .card {
+    padding: 4.8rem 0 4.8rem 4.9rem;
+  }
+  .card__row .card__text {
+    max-width: 23.1rem;
+    margin-bottom: 2.5rem;
+  }
+  .card__row .card__orange {
+    border-radius: 0.8rem 0.8rem 0 0;
+  }
+  .card__row .card__green {
+    border-radius: 0 0 0.8rem 0.8rem;
+  }
+}
